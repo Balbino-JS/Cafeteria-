@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="CSS/Shortcode/shortcode.css">
@@ -18,53 +19,65 @@
             position: relative;
             width: 25%;
         }
-        .information h4 span{
+
+        .information h4 span {
             color: #5e5e5e;
             font-weight: 700;
             padding-right: 10px;
         }
-        .single-contact::after {
+
+        .single-contact:after {
             background: #614a3d none repeatscroll 0 0;
             border-color: #614a3d;
             box-shadow: 0 0 115px 0 rgba(0, 0, 0, 0.4);
+            content: "";
             height: 90px;
             left: 0;
             opacity: 0;
-            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
             position: absolute;
             top: 0;
             -webkit-transition: all 0.2s ease 0s;
             transition: all 0.2s ease 0s;
             width: 100%;
         }
-        .sigle-contact:hover{
+
+        .sigle-contact:hover {
             border-color: #614a3d;
         }
+
         .single-contact:hover:after {
             opacity: 1;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         }
+
         .information {
             border: 1px solid #eeeeee;
             padding: 28px 0;
         }
-        .single-contact:hover .information h4, .single-contact:hover .information h4 span {
+
+        .single-contact:hover .information h4,
+        .single-contact:hover .information h4 span {
             color: #ffffff;
             top: 3px;
         }
+
         /* About Area*/
-        .about-text >h3 {
+        .about-text>h3 {
             color: #5e5e5e;
             font-family: "Courgette", cursive;
             margin: 21px;
             font-size: 36px;
         }
-        .about-text > p:nth-child(2) {
+
+        .about-text>p:nth-child(2) {
             margin-bottom: 15px;
         }
-        .about-text > p:nth-child(3) {
+
+        .about-text>p:nth-child(3) {
             margin-bottom: 46px;
         }
+
         .about-text {
             padding: 52px 0;
             position: relative;
@@ -72,24 +85,31 @@
         }
 
         /* Special area*/
-        .special-area .container-fluid, .image-area .container-fuid {
+        .special-area .container-fluid,
+        .image-area .container-fuid {
             padding-left: 5px;
             padding-right: 5px;
         }
-        .special-item, .single-imagem-item {
+
+        .special-item,
+        .single-imagem-item {
             float: left;
             width: 25%;
             padding-left: 5px;
             padding-right: 5px;
         }
+
         .item-content {
             position: relative;
         }
-        .item-content img, .single-imagem-item img {
+
+        .item-content img,
+        .single-imagem-item img {
             max-width: 100%;
         }
+
         .item:hover {
-            background:  rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+            background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
             bottom: 10px;
             height: auto;
             left: 10px;
@@ -101,28 +121,32 @@
             transition: all 0.4s ease 0s;
             width: auto;
         }
+
         .item-content:hover .item:hover {
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
         }
-        .hover-text > h1 {
+
+        .hover-text>h1 {
             color: #ffffff;
             font-family: "Curgette", cursive;
             left: 50%;
             position: absolute;
             top: 50%;
             -webkit-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
             -webkit-transition: all 0.3s ease 0s;
             transition: all 0.3s ease 0s;
             width: 100%;
         }
-        .item-content:hover .hover-text > h1 {
+
+        .item-content:hover .hover-text>h1 {
             top: 25%;
         }
-        .hover-text > p {
+
+        .hover-text>p {
             bottom: 28%;
             color: #ffffff;
             opacity: 0;
@@ -130,23 +154,26 @@
             padding: 0;
             position: absolute;
             -webkit-transform: translateY(100px);
-                    transform: translateY(100px);
+            transform: translateY(100px);
             -webkit-transition: all 0.3s ease-in-out 0.1s;
             transition: all 0.3s ease-in-out 0.1s;
             left: 20px;
             right: 20px;
         }
+
         .hover-content:hover p {
             opacity: 1;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
             -webkit-transform: translateY(0px);
-                    transform: translateY(0px);
+            transform: translateY(0px);
             -webkit-transition-delay: 0.2s;
-                    transition-delay: 0.2s;
+            transition-delay: 0.2s;
         }
-        .hover-text > h1:hover a {
+
+        .hover-text>h1:hover a {
             color: #be937b;
         }
+
         .hover-text {
             height: 100%;
             left: 0;
@@ -155,6 +182,7 @@
             width: 100%;
             z-index: 2;
         }
+
         .hover-text .price {
             bottom: 17%;
             color: #ffffff;
@@ -167,90 +195,107 @@
             position: absolute;
             right: 0;
             -webkit-transform: translateY(100px);
-                    transform: translateY(100px);
+            transform: translateY(100px);
             -webkit-transition: all 0.3s ease-in-out 0.1s;
-                    transition: all 0.3s ease-in-out 0.1s;
+            transition: all 0.3s ease-in-out 0.1s;
         }
+
         .item-content:hover .price {
             opacity: 1;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
             -webkit-transform: translateY(0px);
-                    transform: translateY(0px);
+            transform: translateY(0px);
             -webkit-transition-delay: 0.5s;
-                    transition-delay: 5.5s;
+            transition-delay: 5.5s;
         }
 
         /* Booking areA*/
         .booking-form input {
             margin-bottom: 20px;
         }
+
         .booking-form input:fous {
             color: #614a3d;
             border-color: #614e3d;
         }
+
         .booking-form input:focus:-ms-input-placeholder {
             opacity: 1;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
             color: #614a3d;
         }
-          .booking-form input:focus:-moz-placeholder {
+
+        .booking-form input:focus:-moz-placeholder {
             opacity: 1;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
             color: #614a3d;
         }
-          .booking-form input:focus:-webkit-placeholder {
+
+        .booking-form input:focus:-webkit-placeholder {
             opacity: 1;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
             color: #614a3d;
         }
+
         .booking-form .default-btn {
             margin-top: 20px;
             padding: 0 98px;
         }
+
         .active.day {
             background: #614a3d none repeat scroll 0 0;
             color: #ffffff;
         }
+
         .day {
             cursor: pointer;
             text-align: center;
         }
+
         .datepicker thead tr:nth-child {
             background: #614a3d none repeat scroll 0 0;
             color: #ffffff;
             text-align: center;
         }
+
         .datepicker-switch {
             text-align: center;
         }
+
         .datepicker {
             padding: 0;
         }
+
         .dete-wrapper .datepicker {
             padding: 0.17px;
         }
-        .datepicker .prev, .datepicker . next {
+
+        .datepicker .prev,
+        .datepicker . next {
             cursor: pointer;
             font-size: 22px;
             padding: 0.8px;
         }
 
         /* Client area*/
-        .single-testimonial > p {
+        .single-testimonial>p {
             color: #dbdada;
             margin-bottom: 18px;
             padding: 0 20px;
         }
+
         .client-rating i {
             color: #ffffff;
             font-size: 18px;
-            margin: 0 1px;   
+            margin: 0 1px;
         }
-        .single-testimonial > h4 {
+
+        .single-testimonial>h4 {
             color: #ffffff;
             font-weight: 500;
             margin-top: 12px;
         }
+
         .single-client {
             background: #ffffff none repeat scroll 0 0;
             display: table;
@@ -258,26 +303,28 @@
             text-align: center;
             width: 100%;
         }
-        .single-client-container
-        .col-md-4:nth-child(1),
-        .single-client-container
-        .col-md-4:nth-child(2),
-        .single-client-container
-        .col-md-4:nth-child(3) {
+
+        .single-client-container .col-md-4:nth-child(1),
+        .single-client-container .col-md-4:nth-child(2),
+        .single-client-container .col-md-4:nth-child(3) {
             margin-bottom: 32px;
         }
+
         .client-table-cell {
             display: table-cell;
             vertical-align: middle;
         }
+
         .single-client:hover {
             opacity: 0.8;
             -ms-filter: "progid:DTXImageTransform.Microsof.Alpha(Opacity=80)";
         }
+
         .owl-dot {
             margin-top: 62px;
             text-align: center;
         }
+
         .owl-dot {
             background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
             border: 2px solid #ffffff;
@@ -290,6 +337,7 @@
             width: 14px;
             position: relative;
         }
+
         .owl-dot:after {
             background: #ffffff none repeat scroll 0 0;
             border-radius: 505;
@@ -304,10 +352,12 @@
             transition: all 0.1s ease-out 0s;
             width: 20px;
         }
+
         .owl-dot.active:after {
-           opacity: 1;
-           -ms-filter: "progid:DTXImageTransform.Microsof.Alpha(Opacity=100)"; 
+            opacity: 1;
+            -ms-filter: "progid:DTXImageTransform.Microsof.Alpha(Opacity=100)";
         }
+
         .testimonial-carousel {
             padding-top: 15px;
         }
@@ -405,9 +455,11 @@
                                         <h1>Product name</h1>
                                         <p>Product description 2</p>
                                         <div class="banner-btn">
-                                            <a href="#" class="default-btn">
-                                                <span>View</span>
-                                            </a>
+                                            <div class="banner-btn">
+                                                <a href="#" class="default-btn">
+                                                    <span>View</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -449,9 +501,11 @@
                     <div class="about-text">
                         <h3>Product name</h3>
                         <p>Product promotion description</p>
-                        <a href="#" class="default-btn">
-                            <span>View</span>
-                        </a>
+                        <div class="banner-btn">
+                            <a href="#" class="default-btn">
+                                <span>View</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -506,9 +560,13 @@
                         </div>
 
                         <div class="col-md-12 text-center fix">
-                            <button class="default-btn" type="submit">
-                                <span>Send request</span>
-                            </button>
+
+
+                            <div class="banner-btn">
+                                <a href="#" class="default-btn">
+                                    <span>Send request</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </form>
